@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}
+
+Quote
+
+{% endblock %}
+
+{% block main %}
+
+    <form action="/quote" method="post">
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" autocomplete="off" autofocus name="symbol" placeholder="Symble"
+            type="search">
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-primary" type="submit">Quote</button>
+        </div>
+    </form>
+    {% if quote %}
+        <div class="section">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Symbol</th>
+                        <th>Company Name</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{ quote.symbol }}</td>
+                        <td>{{ quote.name }}</td>
+                        <td>{{ quote.price }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    {% endif %}
+{% endblock %}

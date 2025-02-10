@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: The real-time performance in the best-case (sorted) scenario, represented by Omega, is smaller compared to the others. This means that 'Sort1' is the fastest when the array is already sorted. However, when using random or reversed arrays, it is slower.
+
+sort2 uses: Merge Sort
+
+How do you know?: The real-time performance for all files, regardless of whether they are random, reversed, or sorted, remains practically the same. There were changes only when the number of lines increased. However, for random and reversed files, it performs better compared to Bubble Sort and Selection Sort because its complexity is Θ(n * log n).
+
+sort3 uses: Selection Sort
+
+How do you know?: The real-time performance was the worst because its complexity is Θ(n^2), regardless of whether the files are random, reversed, or sorted. Its values remain practically the same across all files, with changes only when the number of lines increased.

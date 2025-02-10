@@ -1,0 +1,48 @@
+JavaScript:
+It was used to change the visibility of the images to display the information.
+
+HTML:
+<link> - Used to link external CSS stylesheets and other resources.
+<script> - Includes external JavaScript scripts.
+<title> - Defines the title of the page displayed in the browser tab.
+<header> - Defines the header of the page.
+<nav> - Contains the navigation bar.
+<div> - Used to group and style elements.
+<a> - Defines a hyperlink for navigation.
+<button> - Creates a clickable button.
+<main> - Contains the main content of the page.
+<section> - Defines a section of the content.
+<h1> - Defines a level 1 heading.
+<p> - Defines a paragraph of text.
+<ul> - Creates an unordered list.
+<li> - Defines a list item.
+<strong> - Highlights text in bold.
+<img> - Displays an image on the page.
+<footer> - Defines the footer of the page.
+&copy; - Displays the copyright symbol.
+
+CSS:
+margin - Controls the space outside an element.
+padding - Controls the space inside an element.
+text-align - Aligns text horizontally within an element.
+display - Defines how an element is displayed.
+font-weight - Sets the thickness of the font.
+font-size - Sets the size of the font.
+border - Defines the border of an element.
+color - Sets the text color.
+background-color - Sets the background color of an element.
+transition - Adds smooth transitions to CSS property changes.
+transform - Applies transformations like scaling (scale) or moving (translate).
+position - Defines the positioning method of an element
+z-index - Controls the stacking order of elements.
+filter - Applies visual effects.
+visibility - Controls whether an element is visible or hidden.
+gap - Sets the spacing between elements in a flex or grid layout.
+justify-content - Aligns items horizontally in a flex container.
+align-items - Aligns items vertically in a flex container.
+width - Sets the width of an element.
+height - Sets the height of an element.
+top, left, right, bottom - Positions elements when using position: absolute or fixed.
+hover - Defines styles applied when an element is hovered over.
+flex-direction - Defines the direction of flex items
+

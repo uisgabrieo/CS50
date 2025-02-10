@@ -1,0 +1,10 @@
+If songs.db contains the top 100 songs of one listener from 2018, how would you characterize their audio aura?
+
+Based on the tempo of the song, whether the listener prefers faster or slower songs, this can say a lot about their aura.
+The genre of the songs, based on the artists, is another important factor.
+Danceability is another key factor, directly related to the rhythm of the song.
+
+Hypothesize about why the way you’ve calculated this aura might not be very representative of the listener. What better ways of calculating this aura would you propose?
+
+The person's musical taste might have changed over the course of the year.
+The best way to measure a listener's aura is by checking the listening history for at least 3 years, including the current one, and analyzing the trajectory.

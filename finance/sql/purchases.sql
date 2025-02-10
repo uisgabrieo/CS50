@@ -1,0 +1,11 @@
+CREATE TABLE purchases (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id INTEGER NOT NULL,
+    stock_symbol TEXT NOT NULL,
+    shares INTEGER NOT NULL DEFAULT 0,
+    price REAL NOT NULL DEFAULT 0.00,
+    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+

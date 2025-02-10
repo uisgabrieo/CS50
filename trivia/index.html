@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+
+            document.addEventListener("DOMContentLoaded", function(event) {
+                let button = document.querySelectorAll(".choice");
+
+                button.forEach(button =>
+                    button.addEventListener("click", function(event) {
+                        let response_answer = ""
+                        if (button.innerText == "Pacific Ocean") {
+                            response_answer = "<h4 id='correct'>Correct</h4>";
+                        } else {
+                            response_answer = "<h4 id='incorrect'>Incorrect</h4>";
+                        }
+                        document.querySelector("#response_answer_choise").innerHTML = response_answer;
+                    })
+                )
+
+                document.getElementById("form").addEventListener("submit", function(event) {
+                    event.preventDefault();
+
+
+                    let answer = document.getElementById("answer");
+                    let response_answer = ""
+                    if (answer.value == "1939") {
+                        response_answer = "<h4 id='correct'>Correct</h4>";
+                        answer.style.backgroundColor = "green";
+                    } else {
+                        response_answer = "<h4 id='incorrect'>Incorrect</h4>";
+                        answer.style.backgroundColor = "red";
+                    }
+                    document.querySelector("#response_answer").innerHTML = response_answer;
+                })
+
+            });
+
+
+        </script>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>Which is the largest ocean in the world?</h3>
+                <h4 id="response_answer_choise"></h4>
+
+                <button class="choice">Atlantic Ocean</button>
+                <button class="choice">Indian Ocean</button>
+                <button class="choice">Arctic Ocean</button>
+                <button class="choice">Pacific Ocean</button>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <form id="form">
+                    <h3>When did World War II take place?</h3>
+                    <h4 id="response_answer"></h4>
+                    <input type="text" id="answer">
+                    <button type="submit">Check Answer</button>
+                </form>
+            </div>
+        </div>
+    </body>
+
+</html>
